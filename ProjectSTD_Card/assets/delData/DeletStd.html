@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="../../index.html">หน้าหลัก</a>
+    <a href="../EditData/EditStd.html">แก้ไขข้อมูลนักเรียน</a>
+    <a href="../addData/AddStd.html">เพิ่มข้อมูลนักเรียน</a>
+    <a href="../topupData/Topup.html">เติมเงินนักเรียน</a>
+
+     <div class="form">
+        <input type="number" id="student_id" placeholder="รหัสนักเรียน">
+        <button onclick="loadData()">ค้นหา</button>
+    </div>
+
+    <div class="delData">
+        <div> ข้อมูลนักเรียน </div>
+        <div><input type="number" disabled name="student_id"> กรอกรหัสนักเรียน</div>
+        <div><input type="text" disabled name="full_name"> กรอกชื่อ-นามสกุล ไม่ต้องกรอกคำนำหน้า</div>
+        <div><input type="text" disabled name="card_number">รหัสบัตร โดยตั้งขึ้นต้นว่า STD ตามด้วยรหัสนักศึกษา</div>
+        <div><input type="text" disabled name="balance">กรอกยอดเงิน</div>
+    </div>
+    
+    <div>
+        <button onclick="delData()">ลบข้อมูล</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="del.js"></script>
+</body>
+</html>
